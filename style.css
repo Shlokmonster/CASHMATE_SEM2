@@ -1220,6 +1220,426 @@ justify-content: center;
         text-align: left;
     }
 }
+ /* hero4a trustchain */
+ /* Hero 4 - Trust Chain */
+.hero4a {
+
+    padding: 100px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.hero4a-box1 {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.hero4a-box2 {
+    flex: 1;
+    min-width: 400px;
+    max-width: 550px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.hero4a-head1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero4a-text1 {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.hero4a-text1-2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero4a-text1-2 i {
+    color: #008fd5;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.trust-badges {
+    display: flex;
+    gap: 12px;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+
+    
+}
+
+.trust-badge {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.trust-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.trust-badge i {
+    color: #0085df;
+    font-size: 1rem;
+}
+
+.trust-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #edf2f7;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+}
+
+.trust-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.trust-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.trust-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a202c;
+    font-family: 'Inter', sans-serif;
+}
+
+.trust-card-amount {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #008fd5;
+    font-family: 'Inter', sans-serif;
+}
+
+.trust-card-desc {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.trust-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.trust-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #f6ad55;
+    font-size: 0.95rem;
+}
+
+.trust-card-rating span {
+    color: #718096;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.trust-card-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a5568;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.trust-card-avatar:hover {
+    transform: scale(1.05);
+}
+
+
+.hero4a-button{
+    background: #008fd5;;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+
+.hero4-button:hover{
+   background-color: white;
+   color: #0085df;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero4 {
+        padding: 60px 5%;
+        flex-direction: column;
+    }
+    
+    .hero4-box1, .hero4-box2 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ===== TRUST CHAIN PAGE ===== */
+/* Trust Hero Section */
+.trust-hero {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+  padding: 5rem 5%;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 4rem;
+}
+
+.trust-hero h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.trust-hero h1 i {
+  color: #008fd5;
+  font-size: 2.5rem;
+}
+
+.trust-hero p {
+  font-size: 1.25rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Trust Features Section */
+.trust-features {
+  padding: 0 5% 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.feature-card h3 i {
+  color: #008fd5;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Trust Impact Section */
+.trust-impact {
+  background: #f8fafc;
+  padding: 5rem 5%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.impact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.impact-content h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.impact-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #008fd5;
+  border-radius: 2px;
+}
+
+.impact-content p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .trust-hero {
+    padding: 4rem 5%;
+  }
+  
+  .trust-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .trust-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .feature-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-hero {
+    padding: 3rem 5%;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .trust-hero h1 {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .trust-hero h1 i {
+    font-size: 2rem;
+  }
+  
+  .trust-hero p {
+    font-size: 1rem;
+  }
+  
+  .impact-content h2 {
+    font-size: 2rem;
+  }
+  
+  .impact-content p {
+    font-size: 1rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .trust-hero {
+    padding: 2.5rem 5%;
+  }
+  
+  .trust-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .feature-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .impact-content h2 {
+    font-size: 1.75rem;
+  }
+}
 
 /* why cashmate */
 
