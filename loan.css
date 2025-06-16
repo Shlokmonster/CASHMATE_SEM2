@@ -1,0 +1,2793 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --light-gray: #f5f7fa;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ma  input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  /* Hide number input arrows */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  /* Base responsive styles */
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: var(--default-font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 72px;
+    margin: 0;
+    padding: 15px 0;
+    background: #eff2f6;
+    z-index: 199;
+  }
+  .background-1 {
+    position: absolute;
+    width: 18.68%;
+    top: 0;
+    bottom: 0;
+    left: 10.42%;
+    background: #ffffff;
+    z-index: 200;
+  }
+  .background-2 {
+    position: relative;
+    width: 269.05px;
+    height: 52px;
+    margin: 10px 0 0 0;
+    background: #ffffff;
+    z-index: 201;
+  }
+  .small {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px 0 0 0;
+    z-index: 23;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .listitem-link {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(-159.62%, 0);
+    z-index: 203;
+    border-radius: 5.2px;
+  }
+  .symbol {
+    position: absolute;
+    width: 23.086px;
+    height: 26px;
+    top: 13px;
+    left: 50%;
+    font-family: Font Awesome 5 Brands, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/femMro8RtL.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-49.3%, 0);
+    z-index: 204;
+  }
+  .listitem-link-3 {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(-50.01%, 0);
+    z-index: 205;
+    border-radius: 5.2px;
+  }
+  .symbol-4 {
+    position: absolute;
+    width: 26.356px;
+    height: 26px;
+    top: 13px;
+    left: 50%;
+    font-family: Font Awesome 5 Brands, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/o7wiuaJUHE.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-49.32%, 0);
+    z-index: 206;
+  }
+  .listitem-link-5 {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 50%;
+    background: #ffffff;
+    transform: translate(59.6%, 0);
+    z-index: 207;
+    border-radius: 5.2px;
+  }
+  .symbol-6 {
+    position: absolute;
+    width: 23.086px;
+    height: 26px;
+    top: 13px;
+    left: 50%;
+    font-family: Font Awesome 5 Brands, var(--default-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/fAqTB6YbcF.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-49.29%, 0);
+    z-index: 208;
+  }
+  .connect-email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 22px;
+    left: 995.73px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 210;
+  }
+  .symbol-7 {
+    position: absolute;
+    width: 14.363px;
+    height: 14px;
+    top: 25.8px;
+    left: 973.23px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/JxkEH5JaGf.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 211;
+  }
+  .flex-row-d {
+    position: relative;
+    width: 1109.989px;
+    height: 105.39px;
+    margin: 30px 0 0 160px;
+    z-index: 236;
+  }
+  .google-play {
+    position: absolute;
+    width: 210.8px;
+    height: 105.39px;
+    top: 0;
+    left: 50%;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/BEZuw9RSpc.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(163.28%, 0);
+    z-index: 236;
+    overflow: hidden;
+  }
+  .default-logo {
+    position: absolute;
+    height: 69.8px;
+    top: 17.8px;
+    right: 970.399px;
+    left: 0;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/2fEtY8s1TK.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 213;
+    overflow: hidden;
+  }
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.69px;
+    right: 725.162px;
+    bottom: 42.7px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 217;
+  }
+  .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.69px;
+    right: 635.221px;
+    bottom: 42.7px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 220;
+  }
+  .loans {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: 494.47px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 223;
+  }
+  .channel-partner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.69px;
+    right: 408.42px;
+    bottom: 42.7px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 228;
+  }
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.69px;
+    right: 354.767px;
+    bottom: 42.7px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 231;
+  }
+  .contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 42.69px;
+    right: 250.209px;
+    bottom: 42.7px;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 234;
+  }
+  .symbol-8 {
+    position: absolute;
+    width: 9.144px;
+    height: 14px;
+    top: 50%;
+    left: 550.16px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/i6zgeXxGgO.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(0, -50.04%);
+    z-index: 225;
+  }
+  .iframe {
+    position: relative;
+    width: 1280px;
+    height: 40px;
+  
+    z-index: 1;
+    overflow: hidden;
+  }
+  .html-body {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    background: #ffffff;
+    z-index: 2;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .background-shadow {
+    position: relative;
+    width: 100%;
+    background: #004aa1;
+    z-index: 20;
+    border-radius: 8px 8px 0 0;
+    padding: 30px 20px;
+    margin: 0;
+    text-align: center;
+  }
+  .heading {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    z-index: 24;
+  }
+  .loan-calculator {
+    display: block;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+    text-align: center;
+    z-index: 25;
+  }
+  
+  @media (max-width: 600px) {
+    .loan-calculator {
+      font-size: 24px;
+      white-space: normal;
+    }
+  }
+  .planning-tools,
+  .other-factors {
+    display: block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5px 0;
+  }
+  .flex-column-a {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 20px;
+    z-index: 235;
+    background: white;
+    border-radius: 0 0 8px 8px;
+  }
+  .emi-calculator {
+    display: block;
+    position: relative;
+    color: #2c3e50;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0 25px 0;
+    text-align: center;
+    width: 100%;
+    line-height: 1.3;
+  }
+  
+  @media (max-width: 600px) {
+    .emi-calculator {
+      font-size: 20px;
+      margin: 10px 0 20px 0;
+    }
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px 15px;
+    z-index: 236;
+  }
+  .loan-amount {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 0 0 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .input {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    margin: 5px 0 0 0;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    z-index: 7;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .container-9 {
+    position: relative;
+    width: 669.5px;
+    height: 24px;
+    margin: 9px 0 0 9px;
+    z-index: 8;
+    overflow: hidden;
+  }
+  .amount-500000 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    top: 3px;
+    left: 0;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .annual-interest-rate {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 0 0 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .input-a {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    margin: 5px 0 0 0;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    z-index: 11;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .container-b {
+    position: relative;
+    width: 669.5px;
+    height: 24px;
+    margin: 9px 0 0 9px;
+    z-index: 12;
+    overflow: hidden;
+  }
+  .text-f {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    top: 3px;
+    left: 0;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .loan-term {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 0 0 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .input-c {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    margin: 5px 0 0 0;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    z-index: 15;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .container-d {
+    position: relative;
+    width: 669.5px;
+    height: 24px;
+    margin: 9px 0 0 9px;
+    z-index: 16;
+    overflow: hidden;
+  }
+  .span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 17px;
+    top: 3px;
+    left: 0;
+    color: #000000;
+    font-family: Inter, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 17;
+  }
+  .div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    margin: 30px auto;
+    background: #2c3e50;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .div-button:hover {
+    background: #1a252f;
+  }
+  .span-calculate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70.596px;
+    height: 17px;
+    top: calc(50% - 8.8px);
+    left: calc(50% - 33.35px);
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 19;
+  }
+  .div-background {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    width: 43px;
+    height: 3px;
+    top: 50%;
+    left: 108.38px;
+    background: #008fd5;
+    transform: translate(0, -5543.17%);
+    z-index: -Infinity;
+    border-radius: 4px;
+  }
+  .div-paragraph-background {
+    position: relative;
+    width: 1440px;
+    height: 268.8px;
+    margin: 18.59px 0 0 0;
+    font-size: 0px;
+    background: #004aa1;
+    z-index: 26;
+    overflow: visible auto;
+  }
+  .span-read-on {
+    display: block;
+    position: relative;
+    height: 28.8px;
+    margin: 70px 0 0 130px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 27;
+  }
+  .span-personal-loan-eligibility-documents {
+    display: block;
+    position: relative;
+    height: 44px;
+    margin: 36px 0 0 130px;
+    color: #ffffff;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 28;
+  }
+  .span-personal-loan-eligibility-criteria {
+    display: block;
+    position: relative;
+    height: 40.8px;
+    margin: 70px 0 0 150px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 29;
+  }
+  .span-crack-the-code {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 42px 0 0 150px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .div-flex-row-bb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 295.308px;
+    height: 20px;
+    margin: 25.59px 0 0 150px;
+    z-index: 34;
+  }
+  .div-symbol {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/FcPNgf8GLE.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 34;
+  }
+  .span-resident-citizen {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 33;
+  }
+  .div-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 275.576px;
+    height: 20px;
+    margin: 20.6px 0 0 150px;
+    z-index: 37;
+  }
+  .div-symbol-e {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/Vswdp2MLOH.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 37;
+  }
+  .span-credit-score {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 36;
+  }
+  .div-flex-row-f {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 189.875px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 40;
+  }
+  .div-symbol-f {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/RT6qF9m5Ej.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 40;
+  }
+  .span-employment-stability {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .div-flex-row-af {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 431.495px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 43;
+  }
+  .div-symbol-10 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/fqswOYefKs.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 43;
+  }
+  .span-age-requirement {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 42;
+  }
+  .div-flex-row-d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 192.295px;
+    height: 20px;
+    margin: 20.6px 0 0 150px;
+    z-index: 46;
+  }
+  .div-symbol-11 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/5HG5yLOdRh.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 46;
+  }
+  .span-debt-to-income-ratio {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 45;
+  }
+  .div-flex-row-12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 973.113px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 49;
+  }
+  .div-symbol-13 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/AUY2c8N4sy.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 49;
+  }
+  .span-net-income-requirement {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 48;
+  }
+  .div-flex-row-14 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 267.583px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 52;
+  }
+  .div-symbol-15 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/1CBKHu4VLv.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 52;
+  }
+  .span-credit-score-requirement {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .div-flex-row-16 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 214.431px;
+    height: 20px;
+    margin: 20.6px 0 0 150px;
+    z-index: 55;
+  }
+  .div-symbol-17 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/wEUUXifDm2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 55;
+  }
+  .span-repayment-history {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 54;
+  }
+  .span-documents-required {
+    display: block;
+    position: relative;
+    height: 40.8px;
+    margin: 83.59px 0 0 150px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 56;
+  }
+  .div-flex-row-ca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 617.724px;
+    height: 20px;
+    margin: 27px 0 0 150px;
+    z-index: 60;
+  }
+  .div-symbol-18 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/bLZRUCcF0R.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 60;
+  }
+  .div-identity-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 585.224px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 59;
+  }
+  .span-identity-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .span-identity-proof-options {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .div-flex-row-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1117.396px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 63;
+  }
+  .div-symbol-19 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/djWXEadord.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 63;
+  }
+  .div-address-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 1084.896px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 62;
+  }
+  .span-address-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .span-address-proof-options {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 588.828px;
+    height: 20px;
+    margin: 20.6px 0 0 150px;
+    z-index: 66;
+  }
+  .symbol-1a {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/gVVQZtOGFg.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 66;
+  }
+  .strong-age-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 556.328px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 65;
+  }
+  .age-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .passport-voters-id-driving-license-pan-card-aadhaar-card {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-db {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 485.891px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 69;
+  }
+  .symbol-1b {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/HNuUWNzMyN.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 69;
+  }
+  .strong-income-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 453.391px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 68;
+  }
+  .income-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .text-27 {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-e {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 529.003px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 72;
+  }
+  .symbol-1c {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/oxNkuyzxuQ.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 72;
+  }
+  .strong-employment-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 496.503px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 71;
+  }
+  .employment-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .employment-certificate-office-address-proof {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 354.745px;
+    height: 20px;
+    margin: 20.6px 0 0 150px;
+    z-index: 75;
+  }
+  .symbol-1d {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/J8neRTQfhO.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 75;
+  }
+  .gst-or-vat-registration-for-self-employed {
+    flex-shrink: 0;
+    position: relative;
+    height: 20px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 74;
+  }
+  .flex-row-bb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 338.909px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 78;
+  }
+  .symbol-1e {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/R5enXAynFk.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 78;
+  }
+  .strong-photograph {
+    flex-shrink: 0;
+    position: relative;
+    width: 306.409px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 77;
+  }
+  .photograph {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .passport-size-photographs {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-af {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 1129.45px;
+    height: 45.59px;
+    margin: 20.6px 0 0 150px;
+    z-index: 81;
+  }
+  .symbol-1f {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/7bfwh1W4kS.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 81;
+  }
+  .strong-business-proof {
+    flex-shrink: 0;
+    position: relative;
+    width: 1096.95px;
+    height: 45.59px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45.59px;
+    text-align: left;
+    z-index: 80;
+  }
+  .business-proof {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .business-registration-documents-such-as-a-partnership-deed-memorandum-of-association-moa-articles-of-association-aoa-etc {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .flex-row-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 752.181px;
+    height: 20px;
+    margin: 20.59px 0 0 150px;
+    z-index: 84;
+  }
+  .symbol-20 {
+    flex-shrink: 0;
+    position: relative;
+    width: 14.363px;
+    height: 14px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/0X7y5iGRSf.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 84;
+  }
+  .strong-income-tax-returns {
+    flex-shrink: 0;
+    position: relative;
+    width: 719.681px;
+    height: 20px;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 83;
+  }
+  .income-tax-returns {
+    position: relative;
+    color: #0c2139;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .documents-of-the-past-2-3-years-to-verify-income-and-tax-payment-history {
+    position: relative;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  .fees-and-charges-for-personal-loan {
+    display: block;
+    position: relative;
+    height: 40.8px;
+    margin: 83.6px 0 0 150px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 85;
+  }
+  .fees-and-charges-related-to-personal-loans {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 1131.84px;
+    height: 45.6px;
+    margin: 26.99px 0 0 150px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    z-index: 86;
+  }
+  .flex-row-cbd {
+    position: relative;
+    width: 1140px;
+    height: 44px;
+    margin: 23.59px 0 0 150px;
+    z-index: 89;
+  }
+  .overlay {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(110, 193, 228, 0.14);
+    z-index: 87;
+  }
+  .particulars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 1.75%;
+    color: #008fd5;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 88;
+  }
+  .overlay-21 {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    background: rgba(110, 193, 228, 0.14);
+    z-index: 89;
+  }
+  .charges {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 1.75%;
+    color: #008fd5;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 90;
+  }
+  .flex-row-b-22 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 853.9px;
+    height: 18px;
+    margin: 30px 0 0 160px;
+    z-index: 92;
+  }
+  .loan-processing-fees {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 91;
+  }
+  .rs-1000-to-3-of-loan-amount {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 92;
+  }
+  .flex-row-fd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 721.547px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 94;
+  }
+  .rate-of-interest {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 93;
+  }
+  .starts-from {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 94;
+  }
+  .flex-row-ed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 778.392px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 96;
+  }
+  .loan-cancellation {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 95;
+  }
+  .flex-row-ca {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 96;
+  }
+  .stamp-duty-charges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 691.618px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 98;
+  }
+  .flex-row-c-23 {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 97;
+  }
+  .legal-fees {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 98;
+  }
+  .flex-row-dbfe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 691.618px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 100;
+  }
+  .penal-charges {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 99;
+  }
+  .flex-row-ab {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 100;
+  }
+  .emi-cheque-bounce {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 868.256px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 102;
+  }
+  .heading-faqs {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 101;
+  }
+  .button {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 102;
+  }
+  .symbol-24 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 800.209px;
+    height: 18px;
+    margin: 40px 0 0 160px;
+    z-index: 104;
+  }
+  .flex-row-a-25 {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 103;
+  }
+  .flex-row {
+    flex-shrink: 0;
+    position: relative;
+    height: 18px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 104;
+  }
+  .flex-row-f {
+    display: block;
+    position: relative;
+    height: 40.8px;
+    margin: 90px 0 0 150px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 105;
+  }
+  .flex-row-bb-26 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 25px 0 0 150px;
+    background: #eff2f6;
+    z-index: 106;
+  }
+  .button-27 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 109;
+  }
+  .symbol-28 {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/P3qeNQCbF6.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 107;
+  }
+  .flex-row-a-29 {
+    display: block;
+    position: relative;
+    height: 20px;
+    margin: 22px 0 0 180px;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 111;
+  }
+  .button-2a {
+    position: relative;
+    width: 248.943px;
+    height: 25.59px;
+    margin: 19.59px 0 0 200px;
+    z-index: 115;
+  }
+  .symbol-2b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25.59px;
+    top: 0;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.59px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 114;
+  }
+  .flex-row-f-2c {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 115;
+  }
+  .button-2d {
+    position: relative;
+    width: 184.653px;
+    height: 25.59px;
+    margin: 0.01px 0 0 200px;
+    z-index: 118;
+  }
+  .symbol-2e {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25.59px;
+    top: 0;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.59px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 117;
+  }
+  .button-2f {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 118;
+  }
+  .symbol-30 {
+    position: relative;
+    width: 226.186px;
+    height: 25.59px;
+    margin: 0px 0 0 200px;
+    z-index: 121;
+  }
+  .button-31 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25.59px;
+    top: 0;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.59px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 120;
+  }
+  .symbol-32 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 121;
+  }
+  .button-33 {
+    position: relative;
+    width: 416.186px;
+    height: 25.59px;
+    margin: 0px 0 0 200px;
+    z-index: 124;
+  }
+  .symbol-34 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 25.59px;
+    top: 0;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.59px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 123;
+  }
+  .button-35 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    color: #555c63;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 124;
+  }
+  .group-c {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 56.01px 0 0 150px;
+    background: #eff2f6;
+    z-index: 125;
+  }
+  .text-4e {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 128;
+  }
+  .pic-d {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/0aarzHe1KB.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 126;
+  }
+  .wrapper-18 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 129;
+  }
+  .text-4f {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 132;
+  }
+  .pic-e {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/mUW0BSKiGy.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 130;
+  }
+  .section-14 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 133;
+  }
+  .text-50 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 136;
+  }
+  .img-e {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/n19SP85mia.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 134;
+  }
+  .wrapper-19 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 137;
+  }
+  .personal-loan-insurance {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 140;
+  }
+  .symbol-36 {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/g9M4hrCQN7.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 138;
+  }
+  .button-37 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 141;
+  }
+  .additional-charges {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 144;
+  }
+  .symbol-38 {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/dG2Cj5FhZv.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 142;
+  }
+  .button-39 {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 145;
+  }
+  .calculate-emi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 148;
+  }
+  .symbol-3a {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/eLp9TOOJrs.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 146;
+  }
+  .button-3b {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 149;
+  }
+  .pay-emi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 152;
+  }
+  .symbol-3c {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/tMJaOmB6sw.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 150;
+  }
+  .button-3d {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 153;
+  }
+  .credit-score-benefit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 156;
+  }
+  .symbol-3e {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/OYHNPBhnqb.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 154;
+  }
+  .button-3f {
+    position: relative;
+    width: 1140px;
+    height: 66px;
+    margin: 20px 0 0 150px;
+    background: #eff2f6;
+    z-index: 157;
+  }
+  .balance-transfer-offer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 26px;
+    top: 20px;
+    left: 30px;
+    color: #0c2139;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 160;
+  }
+  .symbol-40 {
+    position: absolute;
+    width: 14.363px;
+    height: 16px;
+    top: 20px;
+    right: 39.637px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/4vvXtFi88G.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 158;
+  }
+  .background-41 {
+    position: relative;
+    width: 1440px;
+    height: 591.64px;
+    margin: 30px 0 0 0;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/OND4uWwnSV.png)
+      no-repeat center;
+    z-index: 162;
+  }
+  .rectangle {
+    position: absolute;
+    width: 11.63%;
+    top: 60px;
+    bottom: 80px;
+    left: 48.07%;
+    z-index: 176;
+  }
+  .cashmate-logo {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 70px;
+    left: 160px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/h9tFqq7Rwc.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 163;
+    overflow: hidden;
+  }
+  .loans-heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28.8px;
+    top: 70px;
+    left: 469.17px;
+    color: #ffffff;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 168;
+  }
+  .background-42 {
+    position: absolute;
+    height: 304.77px;
+    top: 80px;
+    right: 150px;
+    left: 899.61px;
+    font-size: 0px;
+    background: #09192c;
+    z-index: 177;
+  }
+  .contact-heading {
+    display: block;
+    position: relative;
+    height: 28.8px;
+    margin: 20px 0 0 35px;
+    color: #ffffff;
+    font-family: Rajdhani, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 178;
+  }
+  .horizontal-divider {
+    position: relative;
+    width: 310.39px;
+    height: 1px;
+    margin: 76.59px 0 0 20px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.53);
+    z-index: 184;
+  }
+  .horizontal-divider-43 {
+    position: relative;
+    width: 310.39px;
+    height: 1px;
+    margin: 48.59px 0 0 20px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.53);
+    z-index: 188;
+  }
+  .email-address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 90.79px;
+    left: 42.5px;
+    color: rgba(255, 255, 255, 0.88);
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 182;
+  }
+  .symbol-44 {
+    position: absolute;
+    width: 14.363px;
+    height: 14px;
+    top: 94.59px;
+    left: 20px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/Y23RAWWne7.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 183;
+  }
+  .working-hours {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 140.39px;
+    left: 42.5px;
+    color: rgba(255, 255, 255, 0.88);
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 186;
+  }
+  .symbol-45 {
+    position: absolute;
+    width: 14.363px;
+    height: 14px;
+    top: 144.18px;
+    left: 20px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/n62UTuRwof.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 187;
+  }
+  .address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 286.527px;
+    height: 71.19px;
+    top: 189.98px;
+    left: 42.5px;
+    color: rgba(255, 255, 255, 0.88);
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    z-index: 190;
+  }
+  .symbol-46 {
+    position: absolute;
+    width: 10.819px;
+    height: 14px;
+    top: 219.37px;
+    left: 20px;
+    font-family: Font Awesome 5 Free, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/PKBARKbF0Z.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 191;
+  }
+  .personal-loan {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 151.79px;
+    right: 862.884px;
+    left: 469.17px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 172;
+  }
+  .cashmate-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 237.76px;
+    top: 192px;
+    right: 1042.24px;
+    bottom: 251.67px;
+    left: 160px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    z-index: 165;
+  }
+  .business-loan {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20px;
+    top: 197.79px;
+    right: 860.8px;
+    left: 469.17px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 175;
+  }
+  .google-play-47 {
+    position: absolute;
+    width: 234.17px;
+    height: 117.08px;
+    top: 374.56px;
+    left: 50%;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/P8pJ26YzuS.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-234.87%, 0);
+    z-index: 167;
+    overflow: hidden;
+  }
+  .background-48 {
+    position: relative;
+    width: 1440px;
+    height: 80px;
+    margin: 0px 0 0 0;
+    background: #09192c;
+    z-index: 192;
+  }
+  .link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 160px;
+    background: #d61f24;
+    z-index: 196;
+    border-radius: 20px;
+  }
+  .symbol-49 {
+    position: absolute;
+    width: 17.803px;
+    height: 20px;
+    top: 10px;
+    right: 10.947px;
+    font-family: Font Awesome 5 Brands, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/CUdfwztXLw.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 197;
+  }
+  .privacy-policy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 106.164px;
+    height: 20px;
+    top: 30px;
+    right: 288.926px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+    white-space: nowrap;
+    z-index: 195;
+  }
+  .copyright-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: 32px;
+    left: 160px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 193;
+  }
+  .background-4a {
+    position: absolute;
+    width: 1440px;
+    height: 309px;
+    top: 237.39px;
+    left: 50%;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-15/dqLtGRGBid.png)
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50%, 0);
+  }
+  

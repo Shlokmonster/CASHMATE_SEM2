@@ -50,8 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//  carasoule of testimonials
-
+//  carousel of testimonials
 const testimonials = [
     {
       quote: "There was no paper work and the process is stress-free. Cashmate made my loan journey super quick",
@@ -78,51 +77,53 @@ const testimonials = [
       name: "Aarti V.",
       location: "Koramangala"
     }
-  ];
-  
-  let currentIndex = 0;
-  
-  function renderTestimonials() {
-    const container = document.getElementById("carousel");
-    container.innerHTML = '';
-  
-    for (let i = 0; i < 3; i++) {
-      const index = (currentIndex + i) % testimonials.length;
-      const t = testimonials[index];
-  
-      const card = document.createElement('div');
-      card.className = 'testimonial-card';
-  
-      card.innerHTML = `
-        <p class="quote">“${t.quote}”</p>
-        <h3 class="name">${t.name}</h3>
-        <p class="location">${t.location}</p>
-      `;
-      container.appendChild(card);
+];
+
+// Initialize testimonials carousel only if the container exists
+const carouselContainer = document.getElementById("carousel");
+if (carouselContainer) {
+    let currentIndex = 0;
+    
+    function renderTestimonials() {
+        carouselContainer.innerHTML = '';
+    
+        for (let i = 0; i < 3; i++) {
+            const index = (currentIndex + i) % testimonials.length;
+            const t = testimonials[index];
+        
+            const card = document.createElement('div');
+            card.className = 'testimonial-card';
+        
+            card.innerHTML = `
+                <p class="quote">"${t.quote}"</p>
+                <h3 class="name">${t.name}</h3>
+                <p class="location">${t.location}</p>
+            `;
+            carouselContainer.appendChild(card);
+        }
     }
-  }
-  
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    
+    window.prevSlide = function() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        renderTestimonials();
+    };
+    
+    window.nextSlide = function() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        renderTestimonials();
+    };
+    
+    // Initial render
     renderTestimonials();
-  }
-  
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    renderTestimonials();
-  }
-  
-  // Initial render
-  renderTestimonials();
-  
+}
 
 
 //    Overlay functionality
 
 const channelPartnerBtn = document.getElementById('channelPartnerBtn');
-        const overlay = document.getElementById('overlay');
-        const closeBtn = document.getElementById('closeBtn');
-        const form = document.getElementById('channelPartnerForm');
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('closeBtn');
+const form = document.getElementById('channelPartnerForm');
 
         // Open overlay
         channelPartnerBtn.addEventListener('click', function() {
@@ -169,3 +170,67 @@ const channelPartnerBtn = document.getElementById('channelPartnerBtn');
             // Close overlay
             closeOverlay();
         });
+
+        // loans page js
+
+// Input validation function
+function validateInput(input) {
+    const value = parseFloat(input.value);
+    const min = parseFloat(input.min);
+    const max = parseFloat(input.max);
+    
+    if (isNaN(value)) {
+        input.value = min || 0;
+        return;
+    }
+    
+    if (value < min) {
+        input.value = min;
+    } else if (value > max) {
+        input.value = max;
+    }
+}
+
+function calculateEMI() {
+    // Get input values
+    const principal = parseFloat(document.getElementById('loanAmount').value);
+    const rate = parseFloat(document.getElementById('interestRate').value) / 100 / 12; // Monthly rate
+    const time = parseInt(document.getElementById('loanTerm').value);
+    
+    // Calculate EMI
+    const emi = (principal * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
+    const totalPayment = emi * time;
+    const totalInterest = totalPayment - principal;
+    
+    // Format numbers with commas
+    const formatNumber = num => num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
+    // Update the results
+    document.getElementById('monthlyEMI').textContent = '₹' + formatNumber(emi);
+    document.getElementById('totalInterest').textContent = '₹' + formatNumber(totalInterest);
+    document.getElementById('totalPayment').textContent = '₹' + formatNumber(totalPayment);
+    
+    // Show results
+    document.getElementById('emiResult').style.display = 'block';
+    
+    // Scroll to results
+    document.getElementById('emiResult').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  
+  // Input validation
+  function validateInput(input) {
+    const min = parseFloat(input.min);
+    const max = parseFloat(input.max);
+    let value = parseFloat(input.value);
+    
+    if (isNaN(value)) {
+      input.value = min;
+      return;
+    }
+    
+    if (value < min) {
+      input.value = min;
+    } else if (value > max) {
+      input.value = max;
+    }
+  }
